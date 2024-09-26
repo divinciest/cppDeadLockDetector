@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="vikuana" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="vikuana" prefix_auto="1" extension_auto="1" />
+				<Option object_output="C:/Users/dhiah/Desktop/vikuana/vikuana/.objs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++17" />
+					<Add option="-g" />
+					<Add directory="./cpptrace/src" />
+					<Add directory="./cpptrace/include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="vikuana" prefix_auto="1" extension_auto="1" />
+				<Option object_output="C:/Users/dhiah/Desktop/vikuana/vikuana/.objs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++17" />
+					<Add directory="./cpptrace/src" />
+					<Add directory="./cpptrace/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DDBGHELP" />
+			<Add option="-DCPPTRACE_DEMANGLE_WITH_NOTHING" />
+			<Add option="-DCPPTRACE_UNWIND_WITH_DBGHELP" />
+			<Add option="-DCPPTRACE_STATIC_DEFINE" />
+			<Add option="-DCPPTRACE_GET_SYMBOLS_WITH_DBGHELP" />
+		</Compiler>
+		<Linker>
+			<Add option="-lDbgHelp" />
+		</Linker>
+		<Unit filename="cpptrace/src/binary/elf.cpp" />
+		<Unit filename="cpptrace/src/binary/elf.hpp" />
+		<Unit filename="cpptrace/src/binary/mach-o.cpp" />
+		<Unit filename="cpptrace/src/binary/mach-o.hpp" />
+		<Unit filename="cpptrace/src/binary/module_base.cpp" />
+		<Unit filename="cpptrace/src/binary/module_base.hpp" />
+		<Unit filename="cpptrace/src/binary/object.cpp" />
+		<Unit filename="cpptrace/src/binary/object.hpp" />
+		<Unit filename="cpptrace/src/binary/pe.cpp" />
+		<Unit filename="cpptrace/src/binary/pe.hpp" />
+		<Unit filename="cpptrace/src/binary/safe_dl.cpp" />
+		<Unit filename="cpptrace/src/binary/safe_dl.hpp" />
+		<Unit filename="cpptrace/src/cpptrace.cpp" />
+		<Unit filename="cpptrace/src/ctrace.cpp" />
+		<Unit filename="cpptrace/src/demangle/demangle.hpp" />
+		<Unit filename="cpptrace/src/demangle/demangle_with_cxxabi.cpp" />
+		<Unit filename="cpptrace/src/demangle/demangle_with_nothing.cpp" />
+		<Unit filename="cpptrace/src/demangle/demangle_with_winapi.cpp" />
+		<Unit filename="cpptrace/src/from_current.cpp" />
+		<Unit filename="cpptrace/src/platform/dbghelp_syminit_manager.hpp" />
+		<Unit filename="cpptrace/src/platform/exception_type.hpp" />
+		<Unit filename="cpptrace/src/platform/path.hpp" />
+		<Unit filename="cpptrace/src/platform/platform.hpp" />
+		<Unit filename="cpptrace/src/platform/program_name.hpp" />
+		<Unit filename="cpptrace/src/snippets/snippet.cpp" />
+		<Unit filename="cpptrace/src/snippets/snippet.hpp" />
+		<Unit filename="cpptrace/src/symbols/dwarf/debug_map_resolver.cpp" />
+		<Unit filename="cpptrace/src/symbols/dwarf/dwarf.hpp" />
+		<Unit filename="cpptrace/src/symbols/dwarf/dwarf_resolver.cpp" />
+		<Unit filename="cpptrace/src/symbols/dwarf/resolver.hpp" />
+		<Unit filename="cpptrace/src/symbols/symbols.hpp" />
+		<Unit filename="cpptrace/src/symbols/symbols_core.cpp" />
+		<Unit filename="cpptrace/src/symbols/symbols_with_addr2line.cpp" />
+		<Unit filename="cpptrace/src/symbols/symbols_with_dbghelp.cpp" />
+		<Unit filename="cpptrace/src/symbols/symbols_with_dl.cpp" />
+		<Unit filename="cpptrace/src/symbols/symbols_with_libbacktrace.cpp" />
+		<Unit filename="cpptrace/src/symbols/symbols_with_libdwarf.cpp" />
+		<Unit filename="cpptrace/src/symbols/symbols_with_nothing.cpp" />
+		<Unit filename="cpptrace/src/unwind/unwind.hpp" />
+		<Unit filename="cpptrace/src/unwind/unwind_with_dbghelp.cpp" />
+		<Unit filename="cpptrace/src/unwind/unwind_with_execinfo.cpp" />
+		<Unit filename="cpptrace/src/unwind/unwind_with_libunwind.cpp" />
+		<Unit filename="cpptrace/src/unwind/unwind_with_nothing.cpp" />
+		<Unit filename="cpptrace/src/unwind/unwind_with_unwind.cpp" />
+		<Unit filename="cpptrace/src/unwind/unwind_with_winapi.cpp" />
+		<Unit filename="cpptrace/src/utils/common.hpp" />
+		<Unit filename="cpptrace/src/utils/error.hpp" />
+		<Unit filename="cpptrace/src/utils/microfmt.hpp" />
+		<Unit filename="cpptrace/src/utils/utils.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
