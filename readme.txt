@@ -1,10 +1,10 @@
-  Deadlock Detection Library body 
+  Deadlock Detection Library 
 
 Deadlock Detection Library
 ==========================
 
 This is a debugging library designed to detect deadlocks in multi-threaded applications. It uses hook-based mutexes that can be toggled on or off in debug mode to catch potential deadlocks.
-
+( This waws initially a part of Umbrella game engine )
 Features
 --------
 
@@ -30,11 +30,7 @@ Getting Started
 
 ### Installation
 
-To integrate the deadlock detection system, simply include the provided headers in your project, and link to the appropriate libraries.
-
-    
-    #include <DeadlockDetection/HookMutex.hpp>
-    #include <DeadlockDetection/CentralAuthority.hpp>
+This repo contains a Code::Blocks project that can be used to build and run a demo application. To use the library in your own project, you will have to copy the algorithm manually into your project.
     
 
 ### Usage
@@ -116,4 +112,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Contact
 -------
 
-For questions or support, please open an issue on the GitHub repository or contact [your-email@example.com](mailto:your-email@example.com).
+For questions or support, please open an issue on the GitHub repository or contact [hassenmohamedhia@gmail.com](mailto:hassenmohamedhia@gmail.com).
