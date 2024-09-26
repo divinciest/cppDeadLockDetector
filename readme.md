@@ -4,7 +4,7 @@ Deadlock Detection Library
 ==========================
 
 This is a debugging library designed to detect deadlocks in multi-threaded applications. It uses hook-based mutexes that can be toggled on or off in debug mode to catch potential deadlocks.
-( This waws initially a part of Umbrella game engine )
+( This was initially a part of Umbrella game engine )
 Features
 --------
 
